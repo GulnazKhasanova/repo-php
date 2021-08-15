@@ -1,0 +1,12 @@
+{% for item in products %}
+<pre>
+<div class="window_img">
+        <a href="new_prod.php?c=home&a=show&i={{ item.id }}"  target="_blank"><img class="mini_img" src="{{url}}{{item.imgmini}}"  
+                                            data-src="{{url}}{{item.imgmini}}" alt="картинка лета"/></a>
+    </div>
+</pre>
+<div>{{ item.alias }}</div>
+<div>{{ item.price }}</div>
+{% endfor %}
+
+
